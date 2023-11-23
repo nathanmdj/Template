@@ -1,6 +1,33 @@
-@use 'custom';
+@use 'custom' as c;
 
 // #bground-intro {
 //     // height: min(400px, 80vh);
 //     background-image: url(../img/background01.jpg);
+//     background-size: cover;
 // }
+@media (min-width: 768px) {
+    .news-input {
+        width: 50%;
+    }
+}
+
+.nav-link:hover {
+    color: c.$orange;
+}
+
+.navbar {
+    font-size: clamp(1.25rem, 1.5vw, 2rem);
+}
+
+.brand img{
+    width: clamp(100px, 10vw, 150px);
+}
+
+#html_logo{
+    width: clamp(100px, 20vw, 500px);
+}
+
+h1 {
+    font-size: calc(1.5rem + 2vw);
+}
+
